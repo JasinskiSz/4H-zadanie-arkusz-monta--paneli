@@ -23,7 +23,27 @@
 
     <!-- Blok główny -->
     <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label for="szerokosc">Szerokość pomieszczenia [m]: </label>
+        <input id="szerokosc" type="number">
+        <label for="dlugosc">Długość pomieszczenia [m]: </label>
+        <input id="dlugosc" type="number">
 
+        <p>Typ panelu</p>
+        <input id="laminowane" type="radio" name="typ-panelu" value="panele-laminowane">
+        <label for="laminowane">Panele laminowane</label>
+        <br>
+        <input id="winylowe" type="radio" name="typ-panelu" value="panele-winylowe">
+        <label for="winylowe">Panele winylowe</label>
+        <br>
+        <input id="deska" type="radio" name="typ-panelu" value="deska-podłogowa">
+        <label for="deska">Deska podłogowa</label>
+        
+        <br>
+
+        <input type="submit" value="Oblicz">
+
+        <p id="wynik"></p>
     </main>
 
     <!-- Blok stopki -->
